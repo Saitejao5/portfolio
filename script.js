@@ -1,36 +1,50 @@
-// Toggle Main Menu
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('show');
-}
-
-// Toggle Submenu
-function toggleSubMenu() {
-    const submenu = document.getElementById('learnHereMenu');
-    const arrow = document.querySelector('.arrow');
-
-    if (submenu.classList.contains('hidden')) {
-        submenu.style.display = 'block';
-        arrow.classList.add('up'); // Rotate arrow upwards
-    } else {
-        submenu.style.display = 'none';
-        arrow.classList.remove('up'); // Rotate arrow downwards
-    }
-
-    submenu.classList.toggle('hidden');
-}
-
-// Navigate to Section
-function navigateTo(sectionId) {
-    const sections = document.querySelectorAll('main > section');
-    sections.forEach(section => {
-        section.style.display = 'none';
+function switchTab(tabId, element) {
+    // Hide all content sections
+    document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove("active");
     });
 
-    const targetSection = document.getElementById(sectionId);
-    if (targetSection) {
-        targetSection.style.display = 'block';
-    }
+    // Remove active state from all buttons
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.classList.remove("active");
+    });
+
+    // Show the selected content & highlight the clicked button
+    document.getElementById(tabId).classList.add("active");
+    element.classList.add("active");
 }
+function openpage() {
+  window.location.href="page.html";
+  // Tab to edit
+}
+function imageopen(){
+  window.location.href="image.html";
+  // Tab to edit
+}
+function opendocument(){
+  window.location.href="cer.html";
+  // Tab to edit
+}
+function digital() {
+  window.location.assign("digital.html");
+  // Tab to edit
+}
+function func() {
+  window.location.href="its.html";
+  // Tab to edit
+}
+function gen() {
+  window.location.href="digi.html";
+  // Tab to edit
+}
+function tel(){
+  window.location.href="tel.html";
+  }
+  
+function digi() {
+  window.location.href="digi.html";
+  // Tab to edit
+}
+
 
 
