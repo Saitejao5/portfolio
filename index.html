@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">..5
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
  
 </head>
 <body>
- 
+
   <div class="container">
-    <button >HOME</button>
-    <button onclick="about">ABOUT ME</button>
-    <button>PROJECT</button>
-    <button onclick="cer">CONTACT</button>
+    <button>HOME</button>
+    <button onclick="location.href='#about'">ABOUT ME</button>
+    <button onclick="location.href='#pro'">PROJECT</button>
+    <button onclick="location.href='#cont'">CONTACT</button>
+    
   </div>
 <h4>Hello This Is</h4>
 <h1>Sai Kumar</h1>
 <h5>Designer & Developer </h5>
-  <h2>About Me</h2>
+  <h2 id="about">About Me</h2>
 <h6 class="para" >Proficient in prompt engineering, graphic design, digital marketing, and embedded systems. Passionate about AI
 and emerging technologies, with a strong aptitude for prompt engineering. Eager to leverage
 my technical background and innovative mindset to drive impactful projects and contribute to
@@ -41,47 +44,65 @@ a fast-paced tech environment</h6>
 
     <div id="education" class="tab-content">
         <h6>B tech</h6>
-        <p>Completed My Btech from electronics and communication engineering from PBR Vishvodhaya engineering college in 2023-2026</p>
+        <p>Completed Btech in electronics and communication engineering from PBR Vishvodhaya engineering college in 2023-2026</p>
         <h6>Diploma</h6>
-        <p>completed my diploma from GOVT polytechnic kalyandug in 2020-2023</p>
+        <p>completed diploma in electronics and communication engineering from GOVT polytechnic kalyandug in 2020-2023</p>
         
     </div>
     <div class="head" id="cer">Certificates</div>
 <div class="boxes">
   <button onclick="digi()">Digital Marketing</button>
   <button onclick="tel()">NPTEL</button>
-  <button onclick="opendocument()">GEN AI</button>
+  <button onclick="genai()">GEN AI</button>
 </div>
-<div class="work">Projects
+<div id="pro" class="work">Projects
 </div>
+<div class="all">
+    <div class="project-card" style="background: url('blog.jpg')">
+      <h2>Educational Blog</h2>
+        <div class="overlay">
+            <p class="inside">Educational blog</p>
+            <p>click to visit the project</p>
+            <div onclick="window
+            location.href='https://saitejao5.github.io/tech/'" class="icon">🔗</div>
+        </div>
+    </div>
+     <div class="project-card" style="background: url('hotel.jpg')">
+       <h2>Hotel Booking page </h2>
+        <div class="overlay">
+            <p class="inside1">Hotel Booking</p>
+            <p>click to visit the project</p>
+            <div onclick="window
+            location.href='https://saitejao5.github.io/booking/'" class="icon">🔗</div>
+        </div>
+    </div>
+     <div class="project-card" style="background: url('game.jpg')">
+       <h2>Chess Game</h2>
+        <div class="overlay">
+            <p class="inside2">Chess Game</p>
+            <p>click to visit the project</p>
+            <div onclick="window
+            location.href='heregame link'" class="icon">🔗</div>
+        </div>
+    </div>
+    </div>
+<nav>
+   <div id="cont" class="cont">Contact </nav>
 
-
-<div class="last">
-  
-</div>
-
-<div class="pro-container">
-    <div class="probox" onclick="openpage()" >Educational blog</div>
-  <div class="probox" onclick="imageopen()">Hotel Booking </div>
-  <div class="probox" onclick="opendocument ()">Chess Game</div>
-
-</div>
-    <div class="cont">
-      Contact Me
     </div>
     <div class="mails">tsai3116@gmail.com</div>
    
     <h3>Follow Me</h3>
     <div class="images">
       <div class="imbox1">
-        <a href="github">
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="50">
+        <a href="https://github.com/Saitejao5/portfolio">
+          <img src="githublogo" alt="GitHub Logo" width="50">
         </a>
     
       </div>
       <div class="imbox2">
-      <a href="https://github.com/Saitejao5/booking">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" width="50">
+      <a href=https://www.linkedin.com/in/sai-kumar-b301902a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app>
+          <img src="ldnlogo.jpg" alt="LinkedIn Logo" width="50">
           
           </a>
       </div>
@@ -89,17 +110,10 @@ a fast-paced tech environment</h6>
    <div class="profile">
     <img src="profile.jpg">
    </div>
-
-
-
-
-
-
-
-
-
-  <script src="script.js">
+  <script src="main.js">
     
   </script>
 </body>
 </html>
+
+
